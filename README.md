@@ -19,3 +19,11 @@ Once we have downloaded the different parts of the model, we must join them. To 
 <pre><code> cat fasttext_model* > wiki.en.bin </pre></code> 
 
 This will output a binary file called 'wiki.en.bin' that we can use to encode words of the english dictionary into numeric vectors. 
+
+## Checking the MD5 hash of the file
+
+Once we have downloaded and joined the model, we can check its MD5 hash to verify that we have the correct file. To do so we will run the following command in the terminal, in the same directory where we have the model. 
+
+<pre><code> md5 wiki.en.bin > test_hash_wiki.txt </pre></code>
+
+Then, we must compare the hash appearing on the file 'test_hash_wiki.txt' with the one appearing on the file 'hash_wiki.txt' stored in the repo. If both hashes are equal, it means that we have the proper model file. 
