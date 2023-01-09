@@ -14,16 +14,16 @@ These are the steps needed for downloading the model :
 
 ## Joining the parts of the model 
 
-Once we have downloaded the different parts of the model, we must join them. To do so, we must run the following command on terminal inside the directory where we have downloaded the parts of the model. 
+Once we have downloaded the different parts of the model, we must join them. To do so, we must run the following command on <em><strong> computer's terminal </strong></em> inside the directory where we have downloaded the parts of the model. 
 
 <pre><code> cat fasttext_model* > wiki.en.bin </pre></code> 
 
-This will output a binary file called 'wiki.en.bin' that we can use to encode words of the english dictionary into numeric vectors. 
+(It is important to note here that if the command is runned in an IDE rather than in computer's terminal, results may vary). This will output a binary file called 'wiki.en.bin' that we can use to encode words of the english dictionary into numeric vectors. 
 
-## Checking the MD5 hash of the file
+## Checking the SHA-2 hash of the file
 
-Once we have downloaded and joined the model, we can check its MD5 hash to verify that we have the correct file. To do so we will run the following command in the terminal, in the same directory where we have the model. 
+Once we have downloaded and joined the model, we can check its SHA-2 hash to verify that we have the correct file. To do so we will run the following command in the terminal, in the same directory where we have the model. 
 
-<pre><code> md5 wiki.en.bin > test_hash_wiki.txt </pre></code>
+<pre><code> shasum -a 256 wiki.en.bin </pre></code>
 
-Then, we must compare the hash appearing on the file 'test_hash_wiki.txt' with the one appearing on the file 'hash_wiki.txt' stored in the repo. If both hashes are equal, it means that we have the proper model file. 
+Then, we must compare the hash shown with the one appearing on the file 'hash_wiki.txt' stored in the repo. If both hashes are equal, it means that we have the proper model file. 
