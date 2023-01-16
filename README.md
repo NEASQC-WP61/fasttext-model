@@ -22,8 +22,12 @@ Once we have downloaded the different parts of the model, we must join them. To 
 
 ## Checking the SHA-2 hash of the file
 
-Once we have downloaded and joined the model, we can check its SHA-2 hash to verify that we have the correct file. To do so we will run the following command in the terminal, in the same directory where we have the model. 
+Once we have downloaded and joined the model, we can check its SHA-2 hash to verify that we have the correct file. To do so we will run the following command in the terminal, in the same directory where we have the model 'wiki.en.bin' and the hash file 'hash_wiki.txt'. 
 
-<pre><code> shasum -a 256 wiki.en.bin </pre></code>
+<pre><code> shasum -a 256 -c hash_wiki.txt </pre></code>
 
-Then, we must compare the hash shown with the one appearing on the file 'hash_wiki.txt' stored in the repo. If both hashes are equal, it means that we have the proper model file. 
+This command will check the SHA-256 hash of the model file to check that we have donwloaded the correct file. If this is the case, we should be seeing the following message on terminal : 
+
+
+<pre><code> wiki.en.bin: OK </pre></code>
+
