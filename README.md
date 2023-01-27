@@ -4,13 +4,13 @@ This repo contains the binary file for english language of the fasttext pretrain
 
 ## Downloading the model
 
-These are the steps needed for downloading the model : 
+In order to donwload the parts of the model, we will use the <em><strong> wget </strong></em> software package. In order to install it (on macOs) we can run the following command> 
 
-<ol>
-    <li> Open the model repository in your browser. </li>
-    <li> Click on the 'tag' button to select <em><strong> fasttext_model </strong></em> tag. </li>
-    <li> Inside the assets click on the files 'fasttext_model_*' to download the five parts in which we have divided the model to store it on a git repository. </li> 
-</ol>
+<pre><code> brew install </pre></code>
+
+Once this is done, to dowloand the different parts of the model, we just have to past the following command in the computer's terminal, in the directory where we have stored the repo. 
+
+<pre><code> wget https://github.com/NEASQC-WP61/fasttext-model/releases/download/fasttext_model/fasttext_model_a https://github.com/NEASQC-WP61/fasttext-model/releases/download/fasttext_model/fasttext_model_b https://github.com/NEASQC-WP61/fasttext-model/releases/download/fasttext_model/fasttext_model_c https://github.com/NEASQC-WP61/fasttext-model/releases/download/fasttext_model/fasttext_model_d https://github.com/NEASQC-WP61/fasttext-model/releases/download/fasttext_model/fasttext_model_e </pre></code>
 
 ## Joining the parts of the model 
 
