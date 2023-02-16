@@ -6,7 +6,7 @@ This repo contains the binary file for english language of the fasttext pretrain
 
 In order to donwload the parts of the model, we will use the <em><strong> wget </strong></em> software package. In order to install it (on macOs) we can run the following command> 
 
-<pre><code> brew install </pre></code>
+<pre><code> brew install wget</pre></code>
 
 Once this is done, to dowloand the different parts of the model, we just have to past the following command in the computer's terminal, in the directory where we have stored the repo. 
 
